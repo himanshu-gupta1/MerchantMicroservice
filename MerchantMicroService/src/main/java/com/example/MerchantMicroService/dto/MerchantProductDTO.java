@@ -7,13 +7,35 @@ public class MerchantProductDTO {
     private String merchantProductId;
 
     private int price;
+
+    private int salePrice;
+
     private int stock;
 
     private String productId;
 
     private Merchant merchant;
 
+   // private double merchantRating;
 
+
+
+    public int getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(int salePrice) {
+        this.salePrice = salePrice;
+    }
+
+//
+//    public double getMerchantRating() {
+//        return merchantRating;
+//    }
+//
+//    public void setMerchantRating(double merchantRating) {
+//        this.merchantRating = merchantRating;
+//    }
 
     public String getMerchantProductId() {
         return merchantProductId;

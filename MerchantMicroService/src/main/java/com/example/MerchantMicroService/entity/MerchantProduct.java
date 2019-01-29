@@ -23,6 +23,28 @@ public class MerchantProduct {
 
     private String productId;
 
+    //private double merchantRating;
+
+
+
+    private int salePrice;
+
+    public int getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(int salePrice) {
+        this.salePrice = salePrice;
+    }
+
+
+//    public double getMerchantRating() {
+//        return merchantRating;
+//    }
+//
+//    public void setMerchantRating(double merchantRating) {
+//        this.merchantRating = merchantRating;
+//    }
 
     //@JsonBackReference
     @ManyToOne()
@@ -68,5 +90,18 @@ public class MerchantProduct {
 
     public void setMerchant(Merchant merchant) {
         this.merchant = merchant;
+    }
+
+
+    @Override
+    public String toString() {
+        return "MerchantProduct{" +
+                "merchantProductId='" + merchantProductId + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", productId='" + productId + '\'' +
+                ", salePrice=" + salePrice +
+                ", merchant=" + merchant +
+                '}';
     }
 }
